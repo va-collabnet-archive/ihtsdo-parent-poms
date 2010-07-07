@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.ihtsdo</groupId>
-    <artifactId>ihtsdo-parent</artifactId>
+    <artifactId>ihtsdo</artifactId>
     <version>1-SNAPSHOT</version>
   </parent>
   <artifactId>ihtsdo-wb-parent</artifactId>
@@ -31,9 +31,9 @@
     Parent POM for projects using the IHTSDO Workbench development infrastructure
   </description>
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-wb-parent/trunk</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-wb-parent/trunk</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/ihtsdo-wb-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-wb-parent/trunk/?root=workbench&amp;system=exsy1002</url>
   </scm>
   <issueManagement>
     <system>Tracker</system>

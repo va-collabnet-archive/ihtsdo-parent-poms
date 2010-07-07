@@ -3,21 +3,21 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.ihtsdo</groupId>
-    <artifactId>ihtsdo-parent</artifactId>
+    <artifactId>ihtsdo</artifactId>
     <version>1-SNAPSHOT</version>
   </parent>
-  <artifactId>ihtsdo-term-parent</artifactId>
+  <artifactId>ihtsdo-parent</artifactId>
   <packaging>pom</packaging>
   <version>1-SNAPSHOT</version>
-  <name>IHTSDO Terminology Parent POM</name>
+  <name>IHTSDO Project Parent POM</name>
   <description>
     Parent POM for projects using the IHTSDO development infrastructure
   </description>
   <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-term-parent/trunk</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-term-parent/trunk</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/ihtsdo-term-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-parent/trunk/?root=workbench&amp;system=exsy1002</url>
   </scm>
   <issueManagement>
     <system>Tracker</system>

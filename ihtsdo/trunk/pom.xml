@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ihtsdo</groupId>
-  <artifactId>ihtsdo-parent</artifactId>
+  <artifactId>ihtsdo</artifactId>
   <packaging>pom</packaging>
   <version>1-SNAPSHOT</version>
-  <name>IHTSDO Parent POM</name>
+  <name>IHTSDO Organizational POM</name>
   <description>
     International Health Terminology Standards Development Organisation (IHTSDO) is a not-for-profit association that
     develops and promotes use of SNOMED CT to support safe and effective health information exchange. SNOMED CT is a
@@ -18,9 +18,9 @@
   </organization>
   <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-parent/trunk</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-parent/trunk</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/ihtsdo-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo/trunk/?root=workbench&amp;system=exsy1002</url>
   </scm>
   <ciManagement>
     <system>Continuum</system>
