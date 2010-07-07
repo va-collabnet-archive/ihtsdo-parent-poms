@@ -1,0 +1,116 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ihtsdo</groupId>
+  <artifactId>ihtsdo-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1-SNAPSHOT</version>
+  <name>IHTSDO Parent POM</name>
+  <description>
+    International Health Terminology Standards Development Organisation (IHTSDO) is a not-for-profit association that
+    develops and promotes use of SNOMED CT to support safe and effective health information exchange. SNOMED CT is a
+    clinical terminology and is considered to be the most comprehensive, multilingual healthcare terminology in the
+    world.
+  </description>
+  <organization>
+    <name>International Health Terminology Standards Development Organisation</name>
+    <url>http://www.ihtsdo.org</url>
+  </organization>
+  <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
+  <scm>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-parent/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-parent/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/ihtsdo-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+  </scm>
+  <ciManagement>
+    <system>Continuum</system>
+    <url>https://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/continuum/groupSummary.action</url>
+  </ciManagement>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maestro_ihtsdo.wb-snapshots</id>
+      <name>IHTSDO Snapshots Repository</name>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>maestro_ihtsdo.wb-releases</id>
+      <name>IHTSDO Releases Repository</name>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-releases/</url>
+    </repository>
+  </distributionManagement>
+  <!--
+    Reconfigure the central repository definitions, which will be directed by settings.xml to IHTSDO.
+    These definitions enable the retrieval of snapshots by default, and turn on checksum enforcement for downloads.
+    Other projects should have no need to introduce their own repositories - instead, they can be controlled by their
+    respective Archiva installation.
+  -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/all/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
+        <!-- Currently daily is the default - but this may be reconsidered
+        <updatePolicy>never</updatePolicy>
+        -->
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/all/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
+        <!-- Currently daily is the default - but this may be reconsidered
+        <updatePolicy>never</updatePolicy>
+        -->
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
+      </releases>
+    </repository>
+  </repositories>
+  <properties>
+    <organization.logo>http://www.ihtsdo.org/fileadmin/templates/logohead.png</organization.logo>
+  </properties>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.4.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.0</version>
+          <configuration>
+            <preparationGoals>clean validate</preparationGoals>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <remoteTagging>true</remoteTagging>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>2.0-beta-7</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
+
