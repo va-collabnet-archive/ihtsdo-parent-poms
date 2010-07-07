@@ -206,6 +206,14 @@
                     <exclude>org.dwfa:wb-*</exclude>
                   </excludes>
                 </bannedDependencies>
+                <evaluateBeanshell>
+                  <condition>
+                    "${project.licenses[0]}" != "null" || "${project.artifactId}" == "ihtsdo"
+                  </condition>
+                  <message>
+                    You must specify a License in the POM or one of its parents
+                  </message>
+                </evaluateBeanshell>
               </rules>
             </configuration>
           </execution>
