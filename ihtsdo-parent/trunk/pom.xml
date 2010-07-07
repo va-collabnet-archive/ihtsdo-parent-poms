@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ihtsdo</groupId>
+    <artifactId>ihtsdo-parent</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+  <artifactId>ihtsdo-term-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1-SNAPSHOT</version>
+  <name>IHTSDO Terminology Parent POM</name>
+  <description>
+    Parent POM for projects using the IHTSDO development infrastructure
+  </description>
+  <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
+  <scm>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-term-parent/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/ihtsdo-term-parent/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/ihtsdo-term-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+  </scm>
+  <issueManagement>
+    <system>Tracker</system>
+    <url>https://csfe.aceworkspace.net/sf/tracker/do/listTrackers/projects.ihtsdo/tracker</url>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>IHTSDO Affiliate Agreement</name>
+    </license>
+  </licenses>
+  <mailingLists>
+    <mailingList>
+      <name>announce</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.announce</archive>
+      <post>announce-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+    <mailingList>
+      <name>users</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.users</archive>
+      <post>users-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+    <mailingList>
+      <name>development</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.dev</archive>
+      <post>dev-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+  </mailingLists>
+  <!--
+    For now, sharing the (inherited) workbench repository as permissions are the same. Artifacts may be migrated to a separate
+    repository in future
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maestro_ihtsdo.wb-snapshots</id>
+      <name>IHTSDO Snapshots Repository</name>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>maestro_ihtsdo.wb-releases</id>
+      <name>IHTSDO Releases Repository</name>
+      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-releases/</url>
+    </repository>
+  </distributionManagement>
+  -->
+</project>
+
