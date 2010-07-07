@@ -56,6 +56,10 @@
       <post>dev-ihtsdo_workbench@csfe.aceworkspace.net</post>
     </mailingList>
   </mailingLists>
+  <!--
+    All projects in the workbench repositories are Apache 2.0 licensed and deployed to the wb-* repositories
+     (distributionManagement is inherited from the parent)
+  -->
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>

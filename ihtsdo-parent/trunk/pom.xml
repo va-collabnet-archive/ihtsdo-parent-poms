@@ -23,11 +23,6 @@
     <system>Tracker</system>
     <url>https://csfe.aceworkspace.net/sf/tracker/do/listTrackers/projects.ihtsdo/tracker</url>
   </issueManagement>
-  <licenses>
-    <license>
-      <name>IHTSDO Affiliate Agreement</name>
-    </license>
-  </licenses>
   <mailingLists>
     <mailingList>
       <name>announce</name>
@@ -46,18 +41,29 @@
     </mailingList>
   </mailingLists>
   <!--
-    For now, sharing the (inherited) workbench repository as permissions are the same. Artifacts may be migrated to a separate
-    repository in future
+    Currently, all subprojects are under the affiliate license, though they may choose to override it.
+    In the future, if there are trees of open and closed projects, two additional parent POMs should be introduced (as
+    inheritors of this POM) that assign the correct distributionManagement and license sections. For now, we try to
+    keep it simple.
+   -->
+  <licenses>
+    <license>
+      <name>IHTSDO Affiliate Agreement</name>
+    </license>
+  </licenses>
+  <!--
+    For now, sharing the (inherited) workbench repository as permissions are the same. Artifacts may be migrated to a
+    separate repository in future.
   <distributionManagement>
     <snapshotRepository>
       <id>maestro_ihtsdo.wb-snapshots</id>
       <name>IHTSDO Snapshots Repository</name>
-      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-snapshots/</url>
+      <url>${maestro_ihtsdo.wb-snapshots.url}</url>
     </snapshotRepository>
     <repository>
       <id>maestro_ihtsdo.wb-releases</id>
       <name>IHTSDO Releases Repository</name>
-      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-releases/</url>
+      <url>${maestro_ihtsdo.wb-releases.url}</url>
     </repository>
   </distributionManagement>
   -->

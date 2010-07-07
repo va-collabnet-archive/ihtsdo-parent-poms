@@ -26,16 +26,19 @@
     <system>Continuum</system>
     <url>https://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/continuum/groupSummary.action</url>
   </ciManagement>
+  <!--
+    deploy this POM to the workbench repositories so it is accessible to all. "Private" subprojects should redefine it
+    -->
   <distributionManagement>
     <snapshotRepository>
       <id>maestro_ihtsdo.wb-snapshots</id>
       <name>IHTSDO Snapshots Repository</name>
-      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-snapshots/</url>
+      <url>${maestro_ihtsdo.wb-snapshots.url}</url>
     </snapshotRepository>
     <repository>
       <id>maestro_ihtsdo.wb-releases</id>
       <name>IHTSDO Releases Repository</name>
-      <url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-releases/</url>
+      <url>${maestro_ihtsdo.wb-releases.url}</url>
     </repository>
   </distributionManagement>
   <!--
@@ -80,6 +83,9 @@
   </repositories>
   <properties>
     <organization.logo>http://www.ihtsdo.org/fileadmin/templates/logohead.png</organization.logo>
+    <!-- use properties for URLs so that they can be easily substituted or reused in child POMs -->
+    <maestro_ihtsdo.wb-snapshots.url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-snapshots/</maestro_ihtsdo.wb-snapshots.url>
+    <maestro_ihtsdo.wb-releases.url>http://mgr.servers.aceworkspace.net/apps/maestro_ihtsdo/archiva/repository/wb-releases/</maestro_ihtsdo.wb-releases.url>
   </properties>
   <build>
     <pluginManagement>
