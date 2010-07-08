@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.ihtsdo</groupId>
   <artifactId>ihtsdo</artifactId>
   <packaging>pom</packaging>
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
   <name>IHTSDO Organizational POM</name>
   <description>
     International Health Terminology Standards Development Organisation (IHTSDO) is a not-for-profit association that
@@ -18,9 +17,9 @@
   </organization>
   <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/trunk</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/trunk</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo/trunk/?root=workbench&amp;system=exsy1002</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/tags/ihtsdo-1</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo/tags/ihtsdo-1</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo/tags/?root=workbench&amp;system=exsy1002/ihtsdo-1</url>
   </scm>
   <ciManagement>
     <system>Continuum</system>
