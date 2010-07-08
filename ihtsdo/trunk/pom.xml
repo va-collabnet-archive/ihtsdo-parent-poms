@@ -3,7 +3,7 @@
   <groupId>org.ihtsdo</groupId>
   <artifactId>ihtsdo</artifactId>
   <packaging>pom</packaging>
-  <version>2-SNAPSHOT</version>
+  <version>1-SNAPSHOT</version>
   <name>IHTSDO Organizational POM</name>
   <description>
     International Health Terminology Standards Development Organisation (IHTSDO) is a not-for-profit association that
@@ -169,6 +169,16 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>1.1.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.0.4</version>
         </plugin>
       </plugins>
     </pluginManagement>
