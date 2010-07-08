@@ -15,8 +15,7 @@
  !  limitations under the License.
  -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.ihtsdo</groupId>
@@ -25,15 +24,15 @@
   </parent>
   <artifactId>ihtsdo-wb-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
   <name>IHTSDO Workbench Parent POM</name>
   <description>
     Parent POM for projects using the IHTSDO Workbench development infrastructure
   </description>
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/trunk</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/trunk</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-wb-parent/trunk/?root=workbench&amp;system=exsy1002</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/tags/ihtsdo-wb-parent-1</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-wb-parent/tags/ihtsdo-wb-parent-1</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-wb-parent/tags/?root=workbench&amp;system=exsy1002/ihtsdo-wb-parent-1</url>
   </scm>
   <issueManagement>
     <system>Tracker</system>
@@ -80,7 +79,7 @@
         <role>Java Developer</role>
       </roles>
       <timezone>-8</timezone>
-      <properties/>
+      <properties />
     </developer>
     <developer>
       <id>sc</id>
@@ -94,7 +93,7 @@
         <role>Quality Assurance</role>
       </roles>
       <timezone>-8</timezone>
-      <properties/>
+      <properties />
     </developer>
   </developers>
   <!--
