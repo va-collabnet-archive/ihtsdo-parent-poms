@@ -7,16 +7,16 @@
   </parent>
   <artifactId>ihtsdo-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1</version>
+  <version>2-SNAPSHOT</version>
   <name>IHTSDO Project Parent POM</name>
   <description>
     Parent POM for projects using the IHTSDO development infrastructure
   </description>
   <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
   <scm>
-    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/tags/ihtsdo-parent-1</connection>
-    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/tags/ihtsdo-parent-1</developerConnection>
-    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-parent/tags/?root=workbench&amp;system=exsy1002/ihtsdo-parent-1</url>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/trunk</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/trunk</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-parent/trunk/?root=workbench&amp;system=exsy1002</url>
   </scm>
   <issueManagement>
     <system>Tracker</system>
