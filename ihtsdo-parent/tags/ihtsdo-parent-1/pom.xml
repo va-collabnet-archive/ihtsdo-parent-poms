@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ihtsdo</groupId>
+    <artifactId>ihtsdo</artifactId>
+    <version>1</version>
+  </parent>
+  <artifactId>ihtsdo-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1</version>
+  <name>IHTSDO Project Parent POM</name>
+  <description>
+    Parent POM for projects using the IHTSDO development infrastructure
+  </description>
+  <!-- Stored in the Workbench SVN so that all Maven related material can be kept together -->
+  <scm>
+    <connection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/tags/ihtsdo-parent-1</connection>
+    <developerConnection>scm:svn:https://csfe.aceworkspace.net/svn/repos/workbench/pom/ihtsdo-parent/tags/ihtsdo-parent-1</developerConnection>
+    <url>https://csfe.aceworkspace.net/integration/viewvc/viewvc.cgi/pom/ihtsdo-parent/tags/?root=workbench&amp;system=exsy1002/ihtsdo-parent-1</url>
+  </scm>
+  <issueManagement>
+    <system>Tracker</system>
+    <url>https://csfe.aceworkspace.net/sf/tracker/do/listTrackers/projects.ihtsdo/tracker</url>
+  </issueManagement>
+  <mailingLists>
+    <mailingList>
+      <name>announce</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.announce</archive>
+      <post>announce-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+    <mailingList>
+      <name>users</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.users</archive>
+      <post>users-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+    <mailingList>
+      <name>development</name>
+      <archive>https://csfe.aceworkspace.net/sf/discussion/do/listTopics/projects.ihtsdo/discussion.dev</archive>
+      <post>dev-ihtsdo@csfe.aceworkspace.net</post>
+    </mailingList>
+  </mailingLists>
+  <!--
+    Currently, all subprojects are under the affiliate license, though they may choose to override it.
+    In the future, if there are trees of open and closed projects, two additional parent POMs should be introduced (as
+    inheritors of this POM) that assign the correct distributionManagement and license sections. For now, we try to
+    keep it simple.
+   -->
+  <licenses>
+    <license>
+      <name>IHTSDO Affiliate Agreement</name>
+    </license>
+  </licenses>
+  <!--
+    For now, sharing the (inherited) workbench repository as permissions are the same. Artifacts may be migrated to a
+    separate repository in future.
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maestro_ihtsdo.wb-snapshots</id>
+      <name>IHTSDO Snapshots Repository</name>
+      <url>${maestro_ihtsdo.wb-snapshots.url}</url>
+    </snapshotRepository>
+    <repository>
+      <id>maestro_ihtsdo.wb-releases</id>
+      <name>IHTSDO Releases Repository</name>
+      <url>${maestro_ihtsdo.wb-releases.url}</url>
+    </repository>
+  </distributionManagement>
+  -->
+</project>
+
